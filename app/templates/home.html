@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Welcome, {{ user }}</h1>
-    <h2>Select Game Mode</h2>
-    <ul>
-        <li><a href="/game/online">Play Online</a></li>
-        <li><a href="/game/local">Play with Bot</a></li>
-        <li><a href="/game/nearby">Play with Nearby Friend</a></li>
-    </ul>
+    <h1>Welcome to Tic-Tac-Toe</h1>
+    <form action="/auth/token" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <form action="/auth/register" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
 </body>
 </html>

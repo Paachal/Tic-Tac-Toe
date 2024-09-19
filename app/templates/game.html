@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tic-Tac-Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
     <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
 </head>
 <body>
-    <h1>Tic-Tac-Toe: {{ mode }}</h1>
-    <div id="game-board"></div>
-    <div id="timer">15</div>
-
-    <script src="/static/script.js"></script>
+    <h1>Game Mode: {{ mode }}</h1>
+    <div id="game-board">
+        <!-- Game board will be rendered here -->
+    </div>
 </body>
 </html>
